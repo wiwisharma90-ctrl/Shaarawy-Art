@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oualid Brabri | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slateMuseum: '#F8F4EE',
+                        slateDarker: '#EFE5D8',
+                        goldPremium: '#B08D57',
+                        goldLight: '#DCC7A1',
+                        creamIvory: '#4B3A2F'
+                    },
+                    boxShadow: {
+                        'premium-gold': '0 4px 30px rgba(212, 175, 55, 0.25), 0 1px 10px rgba(212, 175, 55, 0.15)',
+                        'mural-glow': '0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(212, 175, 55, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;900&display=swap');
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #F8F4EE;
+            background-image: radial-gradient(circle at 50% 40%, #FFFDF9 0%, #EFE5D8 100%);
+        }
+        .luxury-font { font-family: 'Cinzel', serif; }
+        .arabic-luxury-font { font-family: 'Amiri', serif; }
+        
+        .gold-glow-text {
+            color: #4B3A2F;
+            text-shadow: 0 0 6px rgba(176,141,87,0.15), 0 0 16px rgba(176,141,87,0.08);
+            animation: pulseGlow 4s infinite ease-in-out;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { text-shadow: 0 0 6px rgba(176,141,87,0.15), 0 0 16px rgba(176,141,87,0.08); }
+            50% { text-shadow: 0 0 10px rgba(176,141,87,0.25), 0 0 24px rgba(176,141,87,0.12); }
+        }
+    </style>
+</head>
+<body class="text-creamIvory overflow-x-hidden selection:bg-goldPremium selection:text-black">
+
+    <!-- 💎 الشاشة الترحيبية -->
+    <div id="luxury-intro" class="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden select-none pointer-events-auto">
+        <div class="intro-curtain-top absolute top-0 left-0 w-full h-1/2 bg-[#E8DDD0] transition-transform duration-[1000ms] ease-in-out"></div>
+        <div class="intro-curtain-bottom absolute bottom-0 left-0 w-full h-1/2 bg-[#E8DDD0] transition-transform duration-[1000ms] ease-in-out"></div>
+        <div class="relative z-30 text-center px-4">
+            <h1 id="luxury-logo" class="text-3xl md:text-5xl font-bold tracking-[0.2em] text-goldPremium font-serif opacity-0 scale-95 transition-all duration-[1200ms] ease-out">
+                OUALID BRABRI ART
+            </h1>
+            <p id="luxury-subtitle" class="text-[10px] md:text-xs tracking-[0.4em] text-goldPremium/60 uppercase mt-3 opacity-0 transition-all duration-[1500ms] ease-out font-mono">
+                Art Gallery & Murals
+            </p>
+        </div>
+    </div>
+
+    <!-- 🧭 شريط التنقل -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slateDarker/90 backdrop-blur-md border-b border-goldPremium/10 px-4 py-4 transition-all duration-300">
+        <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
+            <div class="flex-shrink-0">
+                <button id="lang-btn" class="text-goldPremium border border-goldPremium/30 px-2.5 py-1 rounded text-xs md:text-sm font-medium hover:bg-goldPremium/10 transition-all shadow-premium-gold">EN</button>
+            </div>
+            <div class="flex items-center justify-center gap-4 md:gap-8 flex-grow mx-2">
+                <a href="#about" id="nav-about" class="text-xs md:text-sm font-medium tracking-wide text-[#5A4A3E] hover:text-goldPremium transition-colors duration-300">الفنان</a>
+                <a href="#gallery-section" id="nav-gallery" class="text-xs md:text-sm font-medium tracking-wide text-[#5A4A3E] hover:text-goldPremium transition-colors duration-300">المعرض</a>
+                <a href="#contact-title" id="nav-contact" class="text-xs md:text-sm font-medium tracking-wide text-[#5A4A3E] hover:text-goldPremium transition-colors duration-300">تواصل</a>          
+            </div>
+            <div class="flex-shrink-0 text-right">
+                <a href="#" class="text-sm md:text-xl font-bold tracking-widest text-goldPremium gold-glow-text font-serif block truncate max-w-[150px] md:max-w-none">
+                    OUALID BRABRI
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 👤 قسم الفنان (About) -->
+    <section id="about" class="min-h-screen pt-28 pb-12 px-4 max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-8 md:gap-16 items-center justify-center relative">
+        <div class="w-full md:w-1/3 flex justify-center reveal-scale">
+            <div class="relative p-[1px] bg-gradient-to-b from-goldPremium via-slateMuseum to-goldPremium/20 rounded-2xl shadow-premium-gold">
+                <div class="w-44 h-44 md:w-56 md:h-56 rounded-2xl bg-slateDarker flex items-center justify-center overflow-hidden">
+                    <img src="1000330462.png" alt="Artist Profile" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-2/3 space-y-5 text-center md:text-right reveal-left">
+            <span id="artist-tagline" class="inline-block text-goldPremium text-xs uppercase tracking-widest border-b border-goldPremium/30 pb-1 font-semibold">Contemporary Fine Art & Murals</span>
+            <h1 id="artist-name" class="text-3xl md:text-5xl font-bold leading-tight arabic-luxury-font gold-glow-text">وليد برابري</h1>
+            <p id="artist-bio" class="text-[#6B5B4D] leading-relaxed text-sm md:text-base max-w-2xl font-light text-justify">
+               وليد برابري فنان تشكيلي ورسّام جداريات وڨرافيتي من الجزائر، من مواليد 15 سبتمبر 1994 بولاية عنابة. حاصل على شهادة ليسانس قانون عام وماستر 2 قانون دولي. فنان عصامي يتمتع بخبرة في تنفيذ الجداريات والأعمال الفنية البصرية، مع اهتمام خاص بفن الشارع، التصميم الجرافيكي، والرسم بمختلف الخامات والتقنيات.
+               شارك في العديد من المشاريع الفنية والثقافية والتربوية، وعمل مع مدارس وأكاديميات خاصة في تعليم الرسم للأطفال وتنظيم الأنشطة الفنية والإبداعية. كما ساهم في إنجاز جداريات وأعمال فنية ضمن مهرجانات وطنية ودولية، وحصل على عدة جوائز وشهادات تقدير تقديرًا لمساهماته الفنية.
+               يرتكز أسلوبه على تحويل الأفكار والرسائل إلى أعمال بصرية مؤثرة تجمع بين الجانب الجمالي والتعبيري، مع اهتمام خاص بالهوية البصرية، الثقافة الحضرية، والتفاعل مع الفضاءات العامة. ويسعى من خلال أعماله إلى خلق تجارب فنية تترك أثرًا بصريًا وإنسانيًا لدى الجمهور.
+            </p>
+        </div>
+    </section>
+
+    <!-- 🖼️ صالة العرض (Gallery) -->
+    <section id="gallery-section" class="py-24 bg-slateDarker/30 border-t border-goldPremium/5 px-4 md:px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20 reveal-up">
+                <h2 id="gallery-title" class="text-3xl md:text-5xl font-bold arabic-luxury-font mb-3 gold-glow-text">صالة العرض الحصرية</h2>
+                <p id="gallery-subtitle" class="text-sm md:text-base text-gray-600">روائع فنية وثقت بأبعاد فلسفية معاصرة</p>
+                <div class="w-16 h-[1px] bg-goldPremium/40 mx-auto mt-4 shadow-premium-gold"></div>
+            </div>
+
+            <!-- الجدارية الأولى: LIBER -->
+            <div class="bg-slateMuseum border border-goldPremium/15 rounded-2xl overflow-hidden shadow-mural-glow flex flex-col lg:flex-row reveal-mural mb-28">
+                <div class="w-full lg:w-1/2 bg-black flex items-center justify-center min-h-[300px] md:min-h-[460px] relative overflow-hidden group">
+                    <img src="1000329946.jpg" alt="LIBER Graffiti Mural" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-slateDarker/95 border border-goldPremium/30 text-goldPremium px-3 py-1 font-mono text-xs rounded">2025</span>
+                </div>
+                <div class="w-full lg:w-1/2 p-6 md:p-10 flex flex-col justify-between space-y-8">
+                    <div class="space-y-4">
+                        <h3 id="mural-title-1" class="text-2xl md:text-3xl font-bold text-goldPremium arabic-luxury-font tracking-wide border-b border-goldPremium/10 pb-4">جدارية LIBER</h3>
+                        <p id="mural-desc-1" class="text-[#6B5B4D] leading-relaxed text-sm md:text-base text-justify font-light">
+                            جدارية بأسلوب الغرافيتي المعاصر تم تنفيذها ضمن مسابقة فنية وطنية. تستند الفكرة إلى مفهوم الحرية والتحرر من القيود، حيث تم تجسيد حرف "I" في كلمة LIBER على هيئة شخصية تصرخ وهي تكسر السلاسل، في إشارة إلى قوة الإرادة والسعي نحو الانعتاق. تم تصميم الحروف بتداخل مستوحى من ثقافة فن الشارع الأوروبية مع توظيف الألوان لإبراز الطاقة والحركة داخل التكوين. السلاسل مصممة بذكاء على شكل رقم "62" كرمز لعام الاستقلال الذي يجسد قمة التحرر والسيادة الفكرية والوطنية.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 border-t border-goldPremium/10 pt-6 text-xs md:text-sm font-light">
+                        <div class="p-2"><span id="lbl-style-1" class="block text-goldPremium/60 mb-1">الأسلوب الفني</span><p id="val-style-1" class="text-creamIvory font-medium">Contemporary Graffiti / غرافيتي معاصر</p></div>
+                        <div class="p-2"><span id="lbl-tools-1" class="block text-goldPremium/60 mb-1">الأدوات المستخدمة</span><p id="val-tools-1" class="text-creamIvory font-medium">بخاخات، فرشاة، ألوان أكريليك</p></div>
+                        <div class="p-2"><span id="lbl-loc-1" class="block text-goldPremium/60 mb-1">المكان</span><p id="val-loc-1" class="text-creamIvory font-medium">الجزائر</p></div>
+                        <div class="p-2"><span id="lbl-event-1" class="block text-goldPremium/60 mb-1">المناسبة الرسمية</span><p id="val-event-1" class="text-goldPremium font-medium">مسابقة فنية وطنية</p></div>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- الجدارية الثانية: بوالصوف -->
+            <div class="bg-slateMuseum border border-goldPremium/15 rounded-2xl overflow-hidden shadow-mural-glow flex flex-col lg:flex-row reveal-mural mb-28">
+                <div class="w-full lg:w-1/2 bg-black flex items-center justify-center min-h-[300px] md:min-h-[460px] relative overflow-hidden group">
+                    <img src="D0D55ED2-A094-4FD0-B661-080C8A58A0CC.JPG" alt="Abdelhafid Boussouf Mural" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-slateDarker/95 border border-goldPremium/30 text-goldPremium px-3 py-1 font-mono text-xs rounded">2024</span>
+                </div>
+                <div class="w-full lg:w-1/2 p-6 md:p-10 flex flex-col justify-between space-y-8">
+                    <div class="space-y-4">
+                        <h3 id="mural-title-2" class="text-2xl md:text-3xl font-bold text-goldPremium arabic-luxury-font tracking-wide border-b border-goldPremium/10 pb-4">حتى لا ننسى - عبد الحفيظ بوالصوف</h3>
+                        <p id="mural-desc-2" class="text-[#6B5B4D] leading-relaxed text-sm md:text-base text-justify font-light">
+                           عبد الحفيظ بوالصوف – "حتى لا ننسى" أُنجز هذا العمل خلال الأيام الوطنية للرسم الجداري بتقنية الڨرافيتي تحت شعار "حتى لا ننسى"، المنظمة من 1 إلى 5 جويلية بولاية ميلة، برعاية مديرية الثقافة وإشراف مديرية الشباب والرياضة وبالتنسيق مع جمعية الحفلات لولاية ميلة. يجسد العمل شخصية الشهيد والمجاهد عبد الحفيظ بوالصوف (سي مبروك)، أحد أبرز مهندسي الثورة الجزائرية وأب المخابرات الجزائرية ومؤسس الإذاعة السرية للثورة. اعتمدت في هذا العمل على المزج بين البورتريه الواقعي وفن الڨرافيتي المعاصر، بهدف ربط الذاكرة التاريخية بالثقافة البصرية الحديثة وإيصال رسالة الثورة إلى الأجيال الجديدة بلغة فنية معاصرة.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 border-t border-goldPremium/10 pt-6 text-xs md:text-sm font-light">
+                        <div class="p-2"><span id="lbl-style-2" class="block text-goldPremium/60 mb-1">الأسلوب الفني</span><p id="val-style-2" class="text-creamIvory font-medium">بورتريه واقعي + ڨرافيتي</p></div>
+                        <div class="p-2"><span id="lbl-tools-2" class="block text-goldPremium/60 mb-1">الأدوات المستخدمة</span><p id="val-tools-2" class="text-creamIvory font-medium">بخاخات، فرشاة، ألوان أكريليك</p></div>
+                        <div class="p-2"><span id="lbl-loc-2" class="block text-goldPremium/60 mb-1">المكان</span><p id="val-loc-2" class="text-creamIvory font-medium">ولاية ميلة</p></div>
+                        <div class="p-2"><span id="lbl-event-2" class="block text-goldPremium/60 mb-1">المناسبة الرسمية</span><p id="val-event-2" class="text-goldPremium font-medium">الأيام الوطنية للرسم الجداري "حتى لا ننسى"</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الجدارية الثالثة: Sacrifices -->
+            <div class="bg-slateMuseum border border-goldPremium/15 rounded-2xl overflow-hidden shadow-mural-glow flex flex-col lg:flex-row reveal-mural mb-28">
+                <div class="w-full lg:w-1/2 bg-black flex items-center justify-center min-h-[300px] md:min-h-[460px] relative overflow-hidden group">
+                    <img src="56482AB7-FACF-44A0-A5AE-E8C17C3A3018.JPG" alt="Sacrifices Mural" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-slateDarker/95 border border-goldPremium/30 text-goldPremium px-3 py-1 font-mono text-xs rounded">2024</span>
+                </div>
+                <div class="w-full lg:w-1/2 p-6 md:p-10 flex flex-col justify-between space-y-8">
+                    <div class="space-y-4">
+                        <h3 id="mural-title-3" class="text-2xl md:text-3xl font-bold text-goldPremium arabic-luxury-font tracking-wide border-b border-goldPremium/10 pb-4">Sacrifices</h3>
+                        <p id="mural-desc-3" class="text-[#6B5B4D] leading-relaxed text-sm md:text-base text-justify font-light">
+                            هذا العمل الجداري هو قطعة فنية معاصرة بأسلوب الغرافيتي، يعالج مواضيع الذاكرة، التضحية، والوعي الجماعي، من خلال دمج الرموز البصرية مع لغة فن الشارع لإنتاج سرد بصري قوي ومؤثر. في مركز التكوين، تظهر كلمة غرافيتي ملونة بالأخضر والأحمر بأسلوب حاد وديناميكي. عبارات مثل “BLACK DAY” و “SACRIFICES” و “NEVER FORGET” تعمّق الرسالة المفاهيمية للعمل.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 border-t border-goldPremium/10 pt-6 text-xs md:text-sm font-light">
+                        <div class="p-2"><span id="lbl-style-3" class="block text-goldPremium/60 mb-1">الأسلوب الفني</span><p id="val-style-3" class="text-creamIvory font-medium">ڨرافيتي معاصر</p></div>
+                        <div class="p-2"><span id="lbl-tools-3" class="block text-goldPremium/60 mb-1">الأدوات المستخدمة</span><p id="val-tools-3" class="text-creamIvory font-medium">بخاخات، فرشاة، ألوان أكريليك</p></div>
+                        <div class="p-2"><span id="lbl-loc-3" class="block text-goldPremium/60 mb-1">المكان</span><p id="val-loc-3" class="text-creamIvory font-medium">ولاية سطيف</p></div>
+                        <div class="p-2"><span id="lbl-event-3" class="block text-goldPremium/60 mb-1">المناسبة الرسمية</span><p id="val-event-3" class="text-goldPremium font-medium">مهرجان فني (ماي 2025)</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌐 وسائل التواصل الاجتماعي -->
+    <section class="py-20 bg-slateDarker border-t border-goldPremium/10 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10 reveal-up">
+            <h2 id="contact-title" class="text-2xl md:text-3xl font-bold arabic-luxury-font mb-2 gold-glow-text">🌐 المنصات الرسمية للفنان</h2>
+            <p id="contact-subtitle" class="text-[#7A6756] text-xs md:text-sm font-light tracking-wide mb-12">تابعوا كواليس التوثيق والإنتاج الإبداعي عبر شبكاتنا المعتمدة</p>
+            
+            <div class="flex gap-8 md:gap-12 justify-center items-center">
+                <a href="https://www.instagram.com/shr23_officiel?igsh=MWo4MTJjOHh3bXNzZQ==" target="_blank" class="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-slateMuseum border border-goldPremium/10 rounded-full transition-all duration-300 hover:border-goldPremium hover:shadow-premium-gold hover:-translate-y-1.5">
+                    <svg class="w-6 h-6 md:w-7 md:h-7 text-[#6B5B4D] group-hover:text-goldPremium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://wa.me/97470828117" target="_blank" class="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-slateMuseum border border-goldPremium/10 rounded-full transition-all duration-300 hover:border-goldPremium hover:shadow-premium-gold hover:-translate-y-1.5">
+                    <svg class="w-6 h-6 md:w-7 md:h-7 text-[#6B5B4D] group-hover:text-goldPremium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8z"></path></svg>
+                </a>
+                <a href="https://www.facebook.com/share/18LWo9qrC2/?mibextid=wwXIfr" target="_blank" class="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-slateMuseum border border-goldPremium/10 rounded-full transition-all duration-300 hover:border-goldPremium hover:shadow-premium-gold hover:-translate-y-1.5">
+                    <svg class="w-6 h-6 md:w-7 md:h-7 text-[#6B5B4D] group-hover:text-goldPremium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-[10px] uppercase tracking-widest text-[#6B5B4D] bg-[#E8DDD0]">
+        <p>&copy; 2026 Contemporary Fine Art Portfolio. Curated Exceptionally.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

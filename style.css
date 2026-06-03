@@ -1,0 +1,122 @@
+/* --- 🖼️ التحكم المطلق في حجم وأبعاد ألبوم اللوحات --- */
+
+.luxuryGallerySwiper {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    padding: 40px 0 !important;
+}
+
+.luxuryGallerySwiper .luxury-slide {
+    width: 280px !important;  
+    height: 380px !important; 
+    flex-shrink: 0 !important;
+    margin: 0 50px !important; 
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease, filter 0.6s ease !important;
+}
+
+@media (max-width: 640px) {
+    .luxuryGallerySwiper .luxury-slide {
+        width: 200px !important;  
+        height: 280px !important;
+        margin: 0 20px !important;
+    }
+}
+
+.luxuryGallerySwiper .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.25 !important; 
+    filter: blur(2px) brightness(0.4); 
+    transform: scale(0.8) !important; 
+}
+
+.luxuryGallerySwiper .swiper-slide-active {
+    opacity: 1 !important;
+    filter: blur(0px) brightness(1);
+    transform: scale(1.05) !important; 
+    box-shadow: 0 30px 60px rgba(212, 175, 55, 0.2); 
+}
+
+/* --- 📱 تصفير وضبط أمان كامل للموقع لمنع الفراغات الجانبية في الهاتف --- */
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important; 
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+nav {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    nav a {
+        font-size: 12px !important;
+    }
+    nav .gold-glow-text {
+        font-size: 13px !important; 
+    }
+}
+
+/* --- 🎬 سيناريو الحركة السينمائية الموزعة زمنيًا بالـ CSS --- */
+@keyframes sprayAction {
+    0% { transform: translateY(100vh) scale(0.8); opacity: 0; }
+    25% { transform: translateY(0) scale(1); opacity: 1; } 
+    
+    /* 🔄 مرحلة الاهتزاز والرج الفني المكثف */
+    30% { transform: translate(-8px, -4px) rotate(4deg); }
+    33% { transform: translate(8px, 4px) rotate(-4deg); }
+    36% { transform: translate(-6px, 3px) rotate(3deg); }
+    40% { transform: translate(6px, -3px) rotate(-3deg); }
+    44% { transform: translate(-4px, 2px) rotate(2deg); }
+    48% { transform: translate(4px, -2px) rotate(-2deg); }
+    
+    52% { transform: scale(0.92) translateY(5px); opacity: 1; }
+    80% { transform: scale(0.92) translateY(5px); opacity: 1; }
+    
+    95%, 100% { transform: translateY(120vh) scale(0.8); opacity: 0; }
+}
+.animate-sprayAction {
+    animation: sprayAction 4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes scaleSplash {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    50% { transform: translate(-50%, -50%) scale(0); opacity: 0; } 
+    60% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; } 
+    90% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+}
+.animate-scaleSplash {
+    animation: scaleSplash 4s ease-out forwards;
+}
+
+@keyframes revealLogo {
+    0%, 58% { transform: scale(0.75); opacity: 0; filter: blur(8px); } 
+    70% { transform: scale(1.05); opacity: 1; filter: blur(0px); } 
+    90% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0; }
+}
+.animate-revealLogo {
+    animation: revealLogo 4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes fadeOutContainer {
+    0%, 90% { transform: translateY(0); }
+    100% { transform: translateY(-100vh); visibility: hidden; }
+}
+.animate-fadeOutContainer {
+    animation: fadeOutContainer 4.4s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.spray-paint-splash-style {
+    background: radial-gradient(circle, rgba(212,175,55,0.85) 0%, rgba(212,175,55,0.35) 55%, rgba(212,175,55,0) 75%) !important;
+}
