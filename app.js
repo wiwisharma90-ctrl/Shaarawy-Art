@@ -46,10 +46,21 @@ const translations = {
         muralTitle2: "حتى لا ننسى - عبد الحفيظ بوالصوف",
         muralDesc2: "عبد الحفيظ بوالصوف – \"حتى لا ننسى\" أُنجز هذا العمل خلال الأيام الوطنية للرسم الجداري بتقنية الڨرافيتي تحت شعار \"حتى لا ننسى\"، المنظمة من 1 إلى 5 جويلية بولاية ميلة، برعاية مديرية الثقافة وإشراف مديرية الشباب والرياضة وبالتنسيق مع جمعية الحفلات لولاية ميلة. يجسد العمل شخصية الشهيد والمجاهد عبد الحفيظ بوالصوف (سي مبروك)، أحد أبرز مهندسي الثورة الجزائرية وأب المخابرات الجزائرية ومؤسس الإذاعة السرية للثورة. اعتمدت في هذا العمل على المزج بين البورتريه الواقعي وفن الڨرافيتي المعاصر، بهدف ربط الذاكرة التاريخية بالثقافة البصرية الحديثة وإيصال رسالة الثورة إلى الأجيال الجديدة بلغة فنية معاصرة.",
         valStyle2: "بورتريه واقعي + ڨرافيتي", valTools2: "بخاخات، فرشاة، ألوان أكريليك", valLoc2: "ولاية ميلة", valEvent2: "الأيام الوطنية للرسم الجداري \"حتى لا ننسى\"",
-
+        
         muralTitle3: "Sacrifices",
         muralDesc3: "هذا العمل الجداري هو قطعة فنية معاصرة بأسلوب الغرافيتي، يعالج مواضيع الذاكرة، التضحية، والوعي الجماعي، من خلال دمج الرموز البصرية مع لغة فن الشارع لإنتاج سرد بصري قوي ومؤثر. في مركز التكوين، تظهر كلمة غرافيتي ملونة بالأخضر والأحمر بأسلوب حاد وديناميكي. عبارات مثل “BLACK DAY” و “SACRIFICES” و “NEVER FORGET” تعمّق الرسالة المفاهيمية للعمل.",
         valStyle3: "ڨرافيتي معاصر", valTools3: "بخاخات، فرشاة، ألوان أكريليك", valLoc3: "ولاية سطيف", valEvent3: "مهرجان فني (ماي 2025)"
+
+        // أضيفي هذا في نهاية قسم الـ ar (تحت تفاصيل الجدارية الثالثة مباشرة)
+        muralTitle4: "التطوع حياة - Volunteering is Life",
+        muralDesc4: "هذه اللوحة تحمل رسالة إنسانية وبيئية قوية، وتتمحور حول مفهوم التطوع من أجل الحياة. في مركز العمل الفني تظهر يدان متعاونتان تحتضنان كتلة من التراب تنمو منها نبتة خضراء يافعة. يرمز التراب إلى الأرض والبيئة والحياة الطبيعية، بينما تمثل النبتة النمو والأمل والاستمرارية. أما الأيدي المتشابكة فتعبر عن التعاون والتكافل والعمل الجماعي، وهي إشارة إلى أن حماية البيئة وتنمية المجتمع مسؤولية مشتركة تتطلب مشاركة الجميع. اختيار الخلفية الزرقاء يمنح إحساسًا بالهدوء والصفاء ويرمز إلى السماء والحياة، في حين يبرز اللون الأخضر في النبتة دلالات التجدد والاستدامة. كما أن العبارة المكتوبة في الخلفية تؤكد الفكرة الرئيسية للعمل، وهي أن التطوع ليس مجرد نشاط مؤقت، بل أسلوب حياة يساهم في بناء مستقبل أفضل للأفراد والمجتمعات. من الناحية الفنية، اعتمدت اللوحة على أسلوب واقعي في رسم الأيدي مع اهتمام بالتفاصيل والتظليل، مما يعزز الإحساس بالإنسانية والارتباط المباشر بين الإنسان والطبيعة. فكرة العمل: يجسد هذا العمل أهمية التطوع في رعاية البيئة وخدمة المجتمع، ويؤكد أن الأعمال الصغيرة التي يقوم بها الأفراد معًا يمكن أن تنمو وتثمر مثل النبتة لتصبح رمزًا للحياة والأمل والتنمية المستدامة.",
+        valStyle4: "ڨرافيتي / فن الشارع", 
+        valTools4: "بخاخات، فرشاة، ألوان أكريليك", 
+        valLoc4: "ولاية الطارف", 
+        valEvent4: "اللقاء الوطني الخامس للشباب المتطوع",
+
+        // أضيفي هذا في نهاية قسم الـ ar (تحت تفاصيل الجدارية الثالثة مباشرة)
+
     },
     en: {
         navAbout: "The Artist",
@@ -75,7 +86,15 @@ const translations = {
         muralTitle3: "Sacrifices",
         muralDesc3: "A contemporary graffiti mural addressing themes of memory, sacrifice, and collective consciousness by blending visual symbols with street art language. In the center, the word graffiti appears sharply in green and red. Phrases like 'BLACK DAY', 'SACRIFICES', and 'NEVER FORGET' deepen the conceptual message of the piece.",
         valStyle3: "Contemporary Graffiti", valTools3: "Spray Cans, Brushes, Acrylic Paint", valLoc3: "Setif Province", valEvent3: "Art Festival (May 2025)"
-    }
+
+        muralTitle4: "Volunteering is Life",
+        muralDesc4: "This mural carries a powerful humanitarian and environmental message, centering around the concept of volunteering for life. At the heart of the artwork, two collaborative hands cradle a patch of soil from which a young green plant sprouts. The soil symbolizes the earth, environment, and natural life, while the plant represents growth, hope, and continuity. The interlocked hands express cooperation, solidarity, and collective action, signaling that environmental protection and community development are shared responsibilities. The choice of a blue background brings a sense of serenity and symbolizes the sky and life, while the green hue highlights renewal and sustainability. The background phrase reinforces the main philosophy: volunteering is not just a temporary activity, but a way of life that contributes to building a better future. Artistically, the piece relies on a realistic style in rendering the hands with careful attention to shading and detail, enhancing the human connection with nature.",
+        valStyle4: "Graffiti / Street Art", 
+        valTools4: "Spray Cans, Brushes, Acrylic Paint", 
+        valLoc4: "El Tarf Province", 
+        valEvent4: "The 5th National Gathering of Volunteer Youth",
+
+}
 };
 
 const langBtn = document.getElementById("lang-btn");
@@ -128,7 +147,15 @@ if (langBtn) {
         if(document.getElementById("val-tools-3")) document.getElementById("val-tools-3").innerText = t.valTools3;
         if(document.getElementById("val-loc-3")) document.getElementById("val-loc-3").innerText = t.valLoc3;
         if(document.getElementById("val-event-3")) document.getElementById("val-event-3").innerText = t.valEvent3;
-        
+
+        if(document.getElementById("mural-title-4")) document.getElementById("mural-title-4").innerText = t.muralTitle4;
+        if(document.getElementById("mural-desc-4")) document.getElementById("mural-desc-4").innerText = t.muralDesc4;
+        if(document.getElementById("val-style-4")) document.getElementById("val-style-4").innerText = t.valStyle4;
+        if(document.getElementById("val-tools-4")) document.getElementById("val-tools-4").innerText = t.valTools4;
+        if(document.getElementById("val-loc-4")) document.getElementById("val-loc-4").innerText = t.valLoc4;
+        if(document.getElementById("val-event-4")) document.getElementById("val-event-4").innerText = t.valEvent4;
+
+
         gsap.fromTo("body", { opacity: 0.9 }, { opacity: 1, duration: 0.3 });
     });
 }
