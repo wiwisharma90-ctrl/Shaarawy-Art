@@ -54,13 +54,17 @@ const translations = {
         muralDesc3: "هذا العمل الجداري هو قطعة فنية معاصرة بأسلوب الغرافيتي، يعالج مواضيع الذاكرة، التضحية، والوعي الجماعي، من خلال دمج الرموز البصرية مع لغة فن الشارع لإنتاج سرد بصري قوي ومؤثر. في مركز التكوين، تظهر كلمة غرافيتي ملونة بالأخضر والأحمر بأسلوب حاد وديناميكي. عبارات مثل “BLACK DAY” و “SACRIFICES” و “NEVER FORGET” تعمّق الرسالة المفاهيمية للعمل.",
         valStyle3: "ڨرافيتي معاصر", valTools3: "بخاخات، فرشاة، ألوان أكريليك", valLoc3: "ولاية سطيف", valEvent3: "مهرجان فني (ماي 2025)",
 
-        // الجدارية الرابعة (تمت إضافة فاصلة بالأعلى لربطها تلقائياً)
         muralTitle4: "التطوع حياة - Volunteering is Life",
         muralDesc4: "هذه اللوحة تحمل رسالة إنسانية وبيئية قوية، وتتمحور حول مفهوم التطوع من أجل الحياة. في مركز العمل الفني تظهر يدان متعاونتان تحتضنان كتلة من التراب تنمو منها نبتة خضراء يافعة. يرمز التراب إلى الأرض والبيئة والحياة الطبيعية، بينما تمثل النبتة النمو والأمل والاستمرارية. أما الأيدي المتشابكة فتعبر عن التعاون والتكافل والعمل الجماعي، وهي إشارة إلى أن حماية البيئة وتنمية المجتمع مسؤولية مشتركة تتطلب مشاركة الجميع. اختيار الخلفية الزرقاء يمنح إحساسًا بالهدوء والصفاء ويرمز إلى السماء والحياة، في حين يبرز اللون الأخضر في النبتة دلالات التجدد والاستدامة. كما أن العبارة المكتوبة في الخلفية تؤكد الفكرة الرئيسية للعمل، وهي أن التطوع ليس مجرد نشاط مؤقت، بل أسلوب حياة يساهم في بناء مستقبل أفضل للأفراد والمجتمعات. من الناحية الفنية، اعتمدت اللوحة على أسلوب واقعي في رسم الأيدي مع اهتمام بالتفاصيل والتظليل، مما يعزز الإحساس بالإنسانية والارتباط المباشر بين الإنسان والطبيعة. فكرة العمل: يجسد هذا العمل أهمية التطوع في رعاية البيئة وخدمة المجتمع، ويؤكد أن الأعمال الصغيرة التي يقوم بها الأفراد معًا يمكن أن تنمو وتثمر مثل النبتة لتصبح رمزًا للحياة والأمل والتنمية المستدامة.",
-        valStyle4: "ڨرافيتي / فن الشارع", 
-        valTools4: "بخاخات، فرشاة، ألوان أكريليك", 
-        valLoc4: "ولاية الطارف", 
-        valEvent4: "اللقاء الوطني الخامس للشباب المتطوع"
+        valStyle4: "ڨرافيتي / فن الشارع", valTools4: "بخاخات، فرشاة، ألوان أكريليك", valLoc4: "ولاية الطارف", valEvent4: "اللقاء الوطني الخامس للشباب المتطوع",
+
+        muralTitle5: "رواد العلم عبر العصور",
+        muralDesc5: "جدارية فنية تعليمية تجمع خمسة من أبرز العلماء الذين ساهموا في تطوير المعرفة الإنسانية والعلوم المختلفة. اعتمد العمل على أسلوب واقعي بالأبيض والأسود مع خلفيات لونية دائرية تمنح كل شخصية حضورًا بصريًا مميزًا، بينما تم دمج عناصر ورموز علمية وخطوط عربية داخل التكوين لإبراز إنجازاتهم وتأثيرهم التاريخي. تُجسد الجدارية شخصيات علمية بارزة مثل الخوارزمي، البيروني، ألبرت أينشتاين، ابن سينا، وابن الهيثم، في محاولة لربط التراث العلمي الإسلامي بالمنجزات العلمية الحديثة. يهدف المشروع إلى نشر الثقافة العلمية وتحويل الفضاء العام إلى مساحة تعليمية وجمالية تلهم الأجيال الجديدة وتُعرّفهم بأعلام الفكر والابتكار.",
+        valStyle5: "رسم جداري وتظليل واقعي بالأبيض والأسود", valTools5: "ألوان أكريليك ورش بخاخ", valLoc5: "الجزائر", valEvent5: "تصميم وتنسيق بصري تعليمي (2024)",
+
+        muralTitle6: "جدارية غرافيتي – DZ Graffiti",
+        muralDesc6: "أنجزت هذه الجدارية ضمن فعاليات الملتقى الوطني الثاني لرسم الجداريات \"DZ Graffiti\" المنظم بمدينة بسكرة بمناسبة إحياء اليوم الوطني للشهيد. يعتمد العمل على أسلوب الغرافيتي الأوروبي الكلاسيكي (Wildstyle) من خلال تشابك الحروف وتداخلها في تكوين بصري ديناميكي يعكس روح فن الشارع المعاصر. تميزت الجدارية باستخدام اللون الأخضر كلون أساسي في إشارة إلى الهوية الجزائرية، مع توظيف الظلال الحمراء والبنفسجية لإبراز العمق الثلاثي الأبعاد ومنح الحروف قوة وحضوراً بصرياً. كما تم دمج تأثيرات الإضاءة والنقاط الزخرفية والخطوط الحرة لإضفاء حيوية وحركة على التكوين العام. يعكس العمل الاحترافية العالية في التحكم في التوازن اللوني، البناء الهندسي للحروف، وتقنيات الرش ذات التأثير البصري القوي، مع المحافظة على هوية فن الشارع وروحه الإبداعية.",
+        valStyle6: "Wildstyle Graffiti / غرافيتي كلاسيكي", valTools6: "بخاخات رش احترافية", valLoc6: "بسكرة – الجزائر", valEvent6: "الملتقى الوطني الثاني لرسم الجداريات DZ Graffiti"
     },
     en: {
         navAbout: "The Artist",
@@ -87,13 +91,17 @@ const translations = {
         muralDesc3: "A contemporary graffiti mural addressing themes of memory, sacrifice, and collective consciousness by blending visual symbols with street art language. In the center, the word graffiti appears sharply in green and red. Phrases like 'BLACK DAY', 'SACRIFICES', and 'NEVER FORGET' deepen the conceptual message of the piece.",
         valStyle3: "Contemporary Graffiti", valTools3: "Spray Cans, Brushes, Acrylic Paint", valLoc3: "Setif Province", valEvent3: "Art Festival (May 2025)",
 
-        // الجدارية الرابعة بالإنجليزية (تمت إضافة الفاصلة المفقودة هنا أيضاً)
         muralTitle4: "Volunteering is Life",
-        muralDesc4: "This mural carries a powerful humanitarian and environmental message, centering around the concept of volunteering for life. At the heart of the artwork, two collaborative hands cradle a patch of soil from which a young green plant sprouts. The soil symbolizes the earth, environment, and natural life, while the plant represents growth, hope, and continuity. The interlocked hands express cooperation, solidarity, and collective action, signaling that environmental protection and community development are shared responsibilities. The choice of a blue background brings a sense of serenity and symbolizes the sky and life, while the green hue highlights renewal and sustainability. The background phrase reinforces the main philosophy: volunteering is not just a temporary activity, but a way of life that contributes to building a better future. Artistically, the piece relies on a realistic style in rendering the hands with careful attention to shading and detail, enhancing the human connection with nature.",
-        valStyle4: "Graffiti / Street Art", 
-        valTools4: "Spray Cans, Brushes, Acrylic Paint", 
-        valLoc4: "El Tarf Province", 
-        valEvent4: "The 5th National Gathering of Volunteer Youth"
+        muralDesc4: "This mural carries a powerful humanitarian and environmental message, centering around the concept of volunteering for life. At the heart of the artwork, two collaborative hands cradle a patch of soil from which a young green plant sprouts. The soil symbolizes the earth, environment, and natural life, while the plant represents growth, hope, and continuity. The interlocked hands express cooperation, solidarity, and collective action, signaling that environmental protection and community development are shared responsibilities. The choice of a blue background brings a sense of serenity and symbolizes the sky and life, while the green hue highlights renewal and sustainability. The background phrase reinforces the main philosophy: volunteering is not just a temporary activity, but a way of life that contributes to building a better future.",
+        valStyle4: "Graffiti / Street Art", valTools4: "Spray Cans, Brushes, Acrylic Paint", valLoc4: "El Tarf Province", valEvent4: "The 5th National Gathering of Volunteer Youth",
+
+        muralTitle5: "Pioneers of Science Through the Ages",
+        muralDesc5: "An educational art mural bringing together five of the most prominent scientists who contributed to the development of human knowledge. The work features a realistic black-and-white style with circular colored backgrounds giving each character a distinct visual presence, while scientific symbols and Arabic calligraphy are integrated to highlight their historic achievements. It portrays Al-Khwarizmi, Al-Biruni, Albert Einstein, Ibn Sina, and Ibn al-Haytham, bridging Islamic scientific heritage with modern discoveries to inspire new generations.",
+        valStyle5: "Mural Painting & Realistic B&W Shading", valTools5: "Acrylic Paint & Spray Cans", valLoc5: "Algeria", valEvent5: "Educational Visual Concept & Design (2024)",
+
+        muralTitle6: "DZ Graffiti Mural",
+        muralDesc6: "Created within the activities of the 2nd National Mural Painting Gathering 'DZ Graffiti' held in Biskra on the National Martyr's Day. The piece adopts the classic European graffiti Wildstyle, showcasing interlocking letters in a dynamic visual composition that mirrors contemporary street art. Primarily using green to signify Algerian identity, with red and purple shading to produce a 3D depth, the work integrates lighting highlights, freehand lines, and patterns, demonstrating high professional mastery of color balance and lettering structure.",
+        valStyle6: "Classic Wildstyle Graffiti", valTools6: "Professional Spray Cans", valLoc6: "Biskra – Algeria", valEvent6: "The 2nd National Mural Painting Gathering 'DZ Graffiti'"
     }
 };
 
@@ -118,8 +126,8 @@ if (langBtn) {
         if(document.getElementById("contact-title")) document.getElementById("contact-title").innerText = t.contactTitle;
         if(document.getElementById("contact-subtitle")) document.getElementById("contact-subtitle").innerText = t.contactSubtitle;
         
-        // تحديث العناوين الجانبية للجداول - تم تعديل الرقم هنا إلى 4 لتشمل اللوحة الجديدة تلقائياً
-        for (let i = 1; i <= 4; i++) {
+        // تحديث العناوين الجانبية للجداول (تم التعديل لتشمل 6 لوحات)
+        for (let i = 1; i <= 6; i++) {
             if(document.getElementById(`lbl-style-${i}`)) document.getElementById(`lbl-style-${i}`).innerText = t.lblStyle;
             if(document.getElementById(`lbl-tools-${i}`)) document.getElementById(`lbl-tools-${i}`).innerText = t.lblTools;
             if(document.getElementById(`lbl-loc-${i}`)) document.getElementById(`lbl-loc-${i}`).innerText = t.lblLoc;
@@ -154,6 +162,20 @@ if (langBtn) {
         if(document.getElementById("val-tools-4")) document.getElementById("val-tools-4").innerText = t.valTools4;
         if(document.getElementById("val-loc-4")) document.getElementById("val-loc-4").innerText = t.valLoc4;
         if(document.getElementById("val-event-4")) document.getElementById("val-event-4").innerText = t.valEvent4;
+
+        if(document.getElementById("mural-title-5")) document.getElementById("mural-title-5").innerText = t.muralTitle5;
+        if(document.getElementById("mural-desc-5")) document.getElementById("mural-desc-5").innerText = t.muralDesc5;
+        if(document.getElementById("val-style-5")) document.getElementById("val-style-5").innerText = t.valStyle5;
+        if(document.getElementById("val-tools-5")) document.getElementById("val-tools-5").innerText = t.valTools5;
+        if(document.getElementById("val-loc-5")) document.getElementById("val-loc-5").innerText = t.valLoc5;
+        if(document.getElementById("val-event-5")) document.getElementById("val-event-5").innerText = t.valEvent5;
+
+        if(document.getElementById("mural-title-6")) document.getElementById("mural-title-6").innerText = t.muralTitle6;
+        if(document.getElementById("mural-desc-6")) document.getElementById("mural-desc-6").innerText = t.muralDesc6;
+        if(document.getElementById("val-style-6")) document.getElementById("val-style-6").innerText = t.valStyle6;
+        if(document.getElementById("val-tools-6")) document.getElementById("val-tools-6").innerText = t.valTools6;
+        if(document.getElementById("val-loc-6")) document.getElementById("val-loc-6").innerText = t.valLoc6;
+        if(document.getElementById("val-event-6")) document.getElementById("val-event-6").innerText = t.valEvent6;
 
         gsap.fromTo("body", { opacity: 0.9 }, { opacity: 1, duration: 0.3 });
     });
