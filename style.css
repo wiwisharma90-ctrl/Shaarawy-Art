@@ -127,8 +127,8 @@ footer {
   display: flex;
   flex-direction:  column;
   justify-content: center;
-  algir-items: center;
-  gab: 10px;
+  algin-items: center;
+  gap: 10px;
 
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(8px);
@@ -140,7 +140,7 @@ footer {
 
 footer .socials {
     display: flex;
-    gab: 15px;
+    gap: 15px;
 }
 
 footer .socials a{
