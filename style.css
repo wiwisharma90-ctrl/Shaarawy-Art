@@ -123,7 +123,7 @@ nav {
 
 /* Footer */
 footer {
-  padding: 40px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #111;
